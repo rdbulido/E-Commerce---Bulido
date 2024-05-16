@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style for product.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>       
+    </header>
+    
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product">
+                <img src="image/590W Solar Panel.jpeg">
+                <h3>10BB Solar Panel 【Dual Glass 590 Watts】New Monocrystalline Silicon 590W Solar Panel Full Power Promise Produce 3.6KWh Every Day</h3>
+                <p>Price: P: 7,599</p>
+                <button onclick="addToCart('10BB Solar Panel 【Dual Glass 590 Watts】New Monocrystalline Silicon 590W Solar Panel Full Power Promise Produce 3.6KWh Every Day', 7599)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/Solar Panel Cable.jpeg">
+                <h3>Solar Panel Extension Cable 【1Pair Black & Red 1 Meter/5 Meter】14AWG Solar Wire Cable With MC4 Female and Male Connector</h3>
+                <p>Price: P: 165</p>
+                <button onclick="addToCart('Solar Panel Extension Cable 【1Pair Black & Red 1 Meter/5 Meter】14AWG Solar Wire Cable With MC4 Female and Male Connector', 165)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/3000W Solar Inverter.jpeg">
+                <h3>3000W Solar Inverter【3KW Hybrid Solar Inverter】230Vac PV Max 450Vdc Built In 60A MPPT Solar Charge Controller 50/60Hz Auto</h3>
+                <p>Price: P: 9,999</p>
+                <button onclick="addToCart('3000W Solar Inverter【3KW Hybrid Solar Inverter】230Vac PV Max 450Vdc Built In 60A MPPT Solar Charge Controller 50/60Hz Auto', 9999)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/Solar Battery.jpeg">
+                <h3>Solar Battery Gel Battery Deep Cycle VRLA Lead Acid 12V 100AH</h3>
+                <p>Price: P: 6,500</p>
+                <button onclick="addToCart('Solar Battery Gel Battery Deep Cycle VRLA Lead Acid 12V 100AH', 6500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/LiFePO4 Solar Battery.jpeg">
+                <h3>Gentai power Grade A all new cell 12.8V 100AH LiFePO4 lithium battery</h3>
+                <p>Price: P: 9,888</p>
+                <button onclick="addToCart('Gentai power Grade A all new cell 12.8V 100AH LiFePO4 lithium battery', 9888)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/MCB Circuit Box.jpeg">
+                <h3>Plastic distribution box electrical junction box 2 4 6 8 12 16 ways for smart home MCB circuit breaker</h3>
+                <p>Price: P: 273</p>
+                <button onclick="addToCart('Plastic distribution box electrical junction box 2 4 6 8 12 16 ways for smart home MCB circuit breaker', 273)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/MCB AC Circuit Breaker.jpeg">
+                <h3>CHINT Electric Circuit Breaker NXB-C63/2P （Factory direct sales）</h3>
+                <p>Price: P: 230</p>
+                <button onclick="addToCart('CHINT Electric Circuit Breaker NXB-C63/2P （Factory direct sales）',230)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/MCB DC Circuit Breaker.jpeg">
+                <h3>Mini Circuit Breaker DC 12V 24V 48V DC MCB Battery Car Protector 3A to 250A Air Switch Use Din Rail Mount</h3>
+                <p>Price: P: 380</p>
+                <button onclick="addToCart('Mini Circuit Breaker DC 12V 24V 48V DC MCB Battery Car Protector 3A to 250A Air Switch Use Din Rail Mount', 380)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/DC SPD Surge Protective Device.jpeg">
+                <h3>DC SPD Surge Protective Device 2P 40KA 60KA 600V 800V 1000V Voltage Protector Solar PV Photovoltaic Lightning Arrester</h3>
+                <p>Price: P: 488</p>
+                <button onclick="addToCart('DC SPD Surge Protective Device 2P 40KA 60KA 600V 800V 1000V Voltage Protector Solar PV Photovoltaic Lightning Arrester', 488)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/MPPT Solar Charge Controller.jpeg">
+                <h3>SRNE 60A mppt solar charger controller</h3>
+                <p>Price: P: 4,814</p>
+                <button onclick="addToCart('SRNE 60A mppt solar charger controller', 4814)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/Power Automatic transfer switch.jpeg">
+                <h3>ATS 2P 63A 230V Micro Circuit Breaker Dual Power Automatic transfer switch Auto transfer switch(MCB)</h3>
+                <p>Price: P: 199</p>
+                <button onclick="addToCart('ATS 2P 63A 230V Micro Circuit Breaker Dual Power Automatic transfer switch Auto transfer switch(MCB)',199)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="image/Solar Panel Mounting Bracket Rail Kit.jpeg">
+                <h3>Secure Solar Panel Mounting Bracket Rail Kit for Flat Roof with Middle Clamp</h3>
+                <p>Price: P: 1,199</p>
+                <button onclick="addToCart('Secure Solar Panel Mounting Bracket Rail Kit for Flat Roof with Middle Clamp',1199)">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section id="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+        
+        <section id="receipt" style="display:none;">
+            <h2>Receipt</h2>
+            <div id="receipt-content"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
